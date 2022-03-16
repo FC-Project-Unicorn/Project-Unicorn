@@ -18,7 +18,7 @@ const Base = styled.div`
 `;
 
 const Header = styled.div`
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
   width: 1180px;
   background: #07145a;
@@ -76,6 +76,25 @@ const HowSpanText = styled.div`
   color: #ffffff;
   `;
 
+const ImgScroll1 = styled.div`
+  background-image: url(${ImgScroll_1});
+  background-size: cover;
+  width: 732px;
+  height: 619px;
+`
+const ImgScroll2 = styled.div`
+  background-image: url(${ImgScroll_2});
+  background-size: cover;
+  width: 732px;
+  height: 619px;
+`
+const ImgScroll3 = styled.div`
+  background-image: url(${ImgScroll_3});
+  background-size: cover;
+  width: 732px;
+  height: 619px;
+`
+
 
 function HomeScrollHow() {
   return (
@@ -90,7 +109,7 @@ function HomeScrollHow() {
         </Header>
         <Main>
           <InfoContainer>
-            <img src={ImgScroll_1} alt="" style={{width: "1110px",position: "absolute",height: "618.98px",left: "708px",top: "259px",}}/>
+            <ImgScroll1 style={{position: "absolute", left: "708px",top: "259px", overflow:"hidden"}}/>
             <SpanContainer style={{ top: "658px" }}>
               <img src={IconScroll_1} alt="" style={{position: "absolute",height: "80px",marginTop: "-2%",marginLeft: "-22%",}}/>
               <HowSpanTitle>CSV 파일 업로드</HowSpanTitle>
@@ -100,7 +119,7 @@ function HomeScrollHow() {
             </SpanContainer>
           </InfoContainer>
           <InfoContainer>
-            <img src={ImgScroll_2} alt="" style={{position: "absolute",height: "618.98px",left: "708px",top: "1051px",}}/>
+          <ImgScroll2 style={{position: "absolute",height: "618.98px",left: "708px",top: "1051px",}}/>
             <SpanContainer style={{ top: "1433px", }} >
               <img src={IconScroll_2} alt="" style={{ position: "absolute", height: "80px", marginTop: "-2%", marginLeft: "-22%", }} />
               <HowSpanTitle>기본 정보 입력</HowSpanTitle>
@@ -110,7 +129,7 @@ function HomeScrollHow() {
             </SpanContainer>
           </InfoContainer>
           <InfoContainer>
-            <img src={ImgScroll_3} alt="" style={{ position: "absolute", height: "618.98px", left: "708px", top: "1843px", }} />
+            <ImgScroll3 style={{ position: "absolute", height: "618.98px", left: "708px", top: "1843px", }}/>
             <SpanContainer style={{ top: "2236px" }}>
               <img src={IconScroll_3} alt="" style={{ position: "absolute", height: "80px", marginTop: "-2%", marginLeft: "-22%", }} />
               <HowSpanTitle>LTV 결과 확인</HowSpanTitle>
